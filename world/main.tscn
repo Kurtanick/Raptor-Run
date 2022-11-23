@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://diwp0c5tquukh"]
+[gd_scene load_steps=6 format=3 uid="uid://diwp0c5tquukh"]
 
 [ext_resource type="Script" path="res://camera/camera.gd" id="1_iulr1"]
 [ext_resource type="Texture2D" uid="uid://dllyxpnoisjfd" path="res://assets/sprites/Background/background_static.png" id="1_jhgt0"]
+[ext_resource type="Script" path="res://world/game.gd" id="1_meotv"]
 [ext_resource type="PackedScene" uid="uid://b3jywo0d6hxmc" path="res://world/platform.tscn" id="2_e5a84"]
 [ext_resource type="PackedScene" uid="uid://d2wi4rt3tsv6g" path="res://player/player.tscn" id="4_qco1s"]
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_meotv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
