@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://diwp0c5tquukh"]
+
+[ext_resource type="Script" path="res://camera/camera.gd" id="1_iulr1"]
+[ext_resource type="Texture2D" uid="uid://dllyxpnoisjfd" path="res://assets/sprites/Background/background_static.png" id="1_jhgt0"]
+[ext_resource type="PackedScene" uid="uid://b3jywo0d6hxmc" path="res://world/platform.tscn" id="2_e5a84"]
+[ext_resource type="PackedScene" uid="uid://d2wi4rt3tsv6g" path="res://player/player.tscn" id="4_qco1s"]
+
+[node name="World" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2(1.5, 1.5)
+script = ExtResource("1_iulr1")
+
+[node name="Background" type="Sprite2D" parent="Camera2D"]
+texture = ExtResource("1_jhgt0")
+
+[node name="Environment" type="Node2D" parent="."]
+
+[node name="Static" type="Node2D" parent="Environment"]
+
+[node name="Moving" type="Node2D" parent="Environment"]
+
+[node name="Platform" parent="Environment/Moving" instance=ExtResource("2_e5a84")]
+
+[node name="Player" parent="." instance=ExtResource("4_qco1s")]
+unique_name_in_owner = true
+position = Vector2(-150, -150)
+scale = Vector2(0.5, 0.5)
