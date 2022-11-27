@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwmjtdgpo0pje"
-path="res://.godot/imported/collectible_collected.png-9b873d8f818fb805827af539a7b7fa6b.ctex"
+uid="uid://c3g0xcfyb03o5"
+path="res://.godot/imported/ammo_collectible_idle.png-d027e76b5c635b7a091d4b4d41601545.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Collectible/collectible_collected.png"
-dest_files=["res://.godot/imported/collectible_collected.png-9b873d8f818fb805827af539a7b7fa6b.ctex"]
+source_file="res://collectible/sprites/ammo_collectible_idle.png"
+dest_files=["res://.godot/imported/ammo_collectible_idle.png-d027e76b5c635b7a091d4b4d41601545.ctex"]
 
 [params]
 

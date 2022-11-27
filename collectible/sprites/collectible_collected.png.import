@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c05yymap2vi2m"
-path="res://.godot/imported/dino_enemy_walk.png-65aa31fc3aea1783148d39413caab023.ctex"
+uid="uid://cwmjtdgpo0pje"
+path="res://.godot/imported/collectible_collected.png-a5b5547ebac08ac1a603f1b42da381cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Dino Enemy/dino_enemy_walk.png"
-dest_files=["res://.godot/imported/dino_enemy_walk.png-65aa31fc3aea1783148d39413caab023.ctex"]
+source_file="res://collectible/sprites/collectible_collected.png"
+dest_files=["res://.godot/imported/collectible_collected.png-a5b5547ebac08ac1a603f1b42da381cc.ctex"]
 
 [params]
 

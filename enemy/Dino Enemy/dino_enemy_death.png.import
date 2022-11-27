@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjyhaqlclxcqr"
-path="res://.godot/imported/dino_enemy_death.png-25d6647adbd8308a2f6764eaddbaed3d.ctex"
+path="res://.godot/imported/dino_enemy_death.png-52644e6461b5a5d46c837d03391d881a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Dino Enemy/dino_enemy_death.png"
-dest_files=["res://.godot/imported/dino_enemy_death.png-25d6647adbd8308a2f6764eaddbaed3d.ctex"]
+source_file="res://enemy/Dino Enemy/dino_enemy_death.png"
+dest_files=["res://.godot/imported/dino_enemy_death.png-52644e6461b5a5d46c837d03391d881a.ctex"]
 
 [params]
 

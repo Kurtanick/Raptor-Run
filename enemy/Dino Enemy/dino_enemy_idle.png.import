@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp5tfmlfvbe06"
-path="res://.godot/imported/dino_enemy_idle.png-d8efd01fb0d80a91d2cd1044b99537c2.ctex"
+path="res://.godot/imported/dino_enemy_idle.png-27658ea145ef06a179f7cd5bd3bb02ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Dino Enemy/dino_enemy_idle.png"
-dest_files=["res://.godot/imported/dino_enemy_idle.png-d8efd01fb0d80a91d2cd1044b99537c2.ctex"]
+source_file="res://enemy/Dino Enemy/dino_enemy_idle.png"
+dest_files=["res://.godot/imported/dino_enemy_idle.png-27658ea145ef06a179f7cd5bd3bb02ba.ctex"]
 
 [params]
 

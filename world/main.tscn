@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://diwp0c5tquukh"]
+[gd_scene load_steps=9 format=3 uid="uid://diwp0c5tquukh"]
 
 [ext_resource type="Script" path="res://camera/camera.gd" id="1_iulr1"]
 [ext_resource type="Texture2D" uid="uid://dllyxpnoisjfd" path="res://assets/sprites/Background/background_static.png" id="1_jhgt0"]
 [ext_resource type="Script" path="res://world/game.gd" id="1_meotv"]
 [ext_resource type="PackedScene" uid="uid://b3jywo0d6hxmc" path="res://world/platform.tscn" id="2_e5a84"]
+[ext_resource type="Script" path="res://world/PlayArea.gd" id="4_821l5"]
 [ext_resource type="PackedScene" uid="uid://d2wi4rt3tsv6g" path="res://player/player.tscn" id="4_qco1s"]
+[ext_resource type="AudioStream" uid="uid://bxax6dym4mh4g" path="res://collectible/sounds/collect.wav" id="7_5jw5a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_asl4x"]
+size = Vector2(1800, 1200)
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_meotv")
@@ -21,6 +26,13 @@ texture = ExtResource("1_jhgt0")
 
 [node name="Static" type="Node2D" parent="Environment"]
 
+[node name="PlayArea" type="Area2D" parent="Environment/Static"]
+collision_mask = 4
+script = ExtResource("4_821l5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Static/PlayArea"]
+shape = SubResource("RectangleShape2D_asl4x")
+
 [node name="Moving" type="Node2D" parent="Environment"]
 
 [node name="Platform" parent="Environment/Moving" instance=ExtResource("2_e5a84")]
@@ -29,3 +41,35 @@ texture = ExtResource("1_jhgt0")
 unique_name_in_owner = true
 position = Vector2(-150, -150)
 scale = Vector2(0.5, 0.5)
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="CollectSound" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("7_5jw5a")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+layer = 99
+
+[node name="UI" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Score" type="Label" parent="HUD/UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -175.0
+offset_top = 10.0
+offset_right = -87.0
+offset_bottom = 36.0
+grow_horizontal = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 30
+text = "Score: 1000"
+horizontal_alignment = 2
