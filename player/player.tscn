@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://d2wi4rt3tsv6g"]
+[gd_scene load_steps=52 format=3 uid="uid://d2wi4rt3tsv6g"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ee48c"]
 [ext_resource type="Texture2D" uid="uid://cq2cpa6ymlteh" path="res://player/sprites/player_death.png" id="2_v7h3e"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://daaykoggwti40" path="res://player/sprites/player_run.png" id="5_pdyi7"]
 [ext_resource type="Texture2D" uid="uid://bh4f0ot10fgck" path="res://player/sprites/player_run_shoot.png" id="6_aoif3"]
 [ext_resource type="AudioStream" uid="uid://bohkdqga60yod" path="res://player/sounds/jump.wav" id="7_racbf"]
+[ext_resource type="AudioStream" uid="uid://ci6f14fsm27gv" path="res://player/sounds/player_death.wav" id="8_amdbm"]
+[ext_resource type="AudioStream" uid="uid://c2lnrmtnrsd35" path="res://player/sounds/player_shoot.wav" id="9_nlrd7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i0whm"]
 atlas = ExtResource("2_v7h3e")
@@ -214,3 +216,12 @@ shape = SubResource("RectangleShape2D_y5aku")
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_racbf")
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_amdbm")
+
+[node name="ShootSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_nlrd7")
+
+[node name="ProjectilePosition" type="Node2D" parent="."]
+position = Vector2(130, -30)

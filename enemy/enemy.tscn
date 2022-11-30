@@ -1,9 +1,10 @@
-[gd_scene load_steps=32 format=3 uid="uid://cwu3cxfn0ign6"]
+[gd_scene load_steps=33 format=3 uid="uid://cwu3cxfn0ign6"]
 
 [ext_resource type="Script" path="res://enemy/enemy.gd" id="1_i1c6v"]
 [ext_resource type="Texture2D" uid="uid://bjyhaqlclxcqr" path="res://enemy/Dino Enemy/dino_enemy_death.png" id="1_yohqi"]
 [ext_resource type="Texture2D" uid="uid://bp5tfmlfvbe06" path="res://enemy/Dino Enemy/dino_enemy_idle.png" id="2_a7i58"]
 [ext_resource type="Texture2D" uid="uid://c05yymap2vi2m" path="res://enemy/Dino Enemy/dino_enemy_walk.png" id="3_ahr12"]
+[ext_resource type="AudioStream" uid="uid://dmc6esf2omsqq" path="res://enemy/enemy_death.wav" id="5_l4wkt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twbdb"]
 size = Vector2(160, 170)
@@ -144,3 +145,6 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(-16, 20)
 shape = SubResource("RectangleShape2D_yv1it")
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_l4wkt")

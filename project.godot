@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Raptor Run (Tutorial)"
-run/main_scene="res://world/main.tscn"
+run/main_scene="res://main menu/menu.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Music="*res://music/music.tscn"
 
 [display]
 
